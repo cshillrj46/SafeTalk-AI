@@ -1,9 +1,10 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/cshillrj46/SafeTalk-AI/main/.github/banner-safetalk-ai.svg" alt="SafeTalk-AI: Real-time WhatsApp Scam Detector" width="600"/>
+</p>
 # SafeTalk-AI 🛡️🤖
 
 **SafeTalk-AI** is a cutting-edge, real-time AI chatbot for WhatsApp, designed to automatically detect and prevent scams and social engineering attacks through advanced natural language processing.  
 This project combines FastAPI, Python, machine learning and WhatsApp Web automation to deliver a market-ready, scalable and highly effective antifraud solution.
-
-![SafeTalk-AI Banner](https://raw.githubusercontent.com/cshillrj46/SafeTalk-AI/main/assets/banner.png) <!-- Substitua com o caminho correto do seu banner se tiver -->
 
 ---
 
