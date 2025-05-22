@@ -1,3 +1,7 @@
+![Python CI](https://github.com/cshillrj46/SafeTX-AI/actions/workflows/python_ci_workflow.yml/badge.svg)
+![License](https://img.shields.io/github/license/cshillrj46/SafeTX-AI)
+![Stars](https://img.shields.io/github/stars/cshillrj46/SafeTX-AI?style=social)
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/cshillrj46/SafeTalk-AI/main/.github/banner-safetalk-ai.svg" alt="SafeTalk-AI: Real-time WhatsApp Scam Detector" width="600"/>
 </p>
