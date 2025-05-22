@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/cshillrj46/SafeTalk-AI/main/.github/banner-safetalk-ai.svg" alt="SafeTalk-AI: Real-time WhatsApp Scam Detector" width="600"/>
 </p>
+
 <p align="center">
   <img src="https://img.shields.io/github/license/cshillrj46/SafeTalk-AI" alt="License">
   <img src="https://img.shields.io/github/issues/cshillrj46/SafeTalk-AI" alt="GitHub issues">
