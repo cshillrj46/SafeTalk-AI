@@ -1,0 +1,23 @@
+<svg width="820" height="180" viewBox="0 0 820 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="820" height="180" rx="32" fill="#181A20"></rect>
+  <g>
+    <text x="40" y="65" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="bold" fill="#00FFD0" style="letter-spacing:2px;">
+      SafeTalk-AI
+    </text>
+    <text x="44" y="107" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">
+      Real-time WhatsApp Scam Detector
+    </text>
+    <text x="44" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#BBB">
+      AI-powered Fraud Prevention • Open Source • Modern &amp; Secure
+    </text>
+    <g>
+      <rect x="650" y="30" width="110" height="110" rx="20" fill="#00FFD0" opacity="0.11"></rect>
+      <circle cx="705" cy="85" r="41" fill="#00FFD0" opacity="0.16"></circle>
+      <g>
+        <circle cx="705" cy="85" r="38" fill="#222" stroke="#00FFD0" stroke-width="3"></circle>
+        <path d="M730 71C728 60 717 54 705 54C690 54 678 65 678 80C678 97 698 116 703 120C704 121 706 121 707 120C712 116 732 97 732 80C732 78 732 75 730 71Z" fill="#00FFD0" fill-opacity="0.8"></path>
+        <circle cx="705" cy="80" r="9" fill="#fff" fill-opacity="0.9"></circle>
+      </g>
+    </g>
+  </g>
+</svg>
