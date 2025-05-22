@@ -13,6 +13,7 @@
   <img src="https://img.shields.io/badge/whatsapp%20bot-enabled-brightgreen" alt="WhatsApp Bot">
   <img src="https://img.shields.io/badge/AI%20Security-active-orange" alt="AI Security">
 </p>
+
 ![Python CI](https://github.com/cshillrj46/SafeTX-AI/actions/workflows/python_ci_workflow.yml/badge.svg)
 ![License](https://img.shields.io/github/license/cshillrj46/SafeTX-AI)
 ![Stars](https://img.shields.io/github/stars/cshillrj46/SafeTX-AI?style=social)
