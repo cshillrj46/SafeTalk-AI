@@ -30,7 +30,7 @@ This project combines FastAPI, Python, machine learning and WhatsApp Web automat
 ---
 
 ## 📦 Project Structure
-
+```
 /backend              # FastAPI backend, ML logic
 /data/messages.csv    # Training dataset (no sensitive data)
 /model/*.joblib       # Trained AI model and vectorizer
@@ -40,7 +40,7 @@ This project combines FastAPI, Python, machine learning and WhatsApp Web automat
 requirements.txt      # Python dependencies
 package.json          # Node dependencies (bot)
 /.github              # Workflows, issue templates (optional)
-
+```
 ---
 
 ## ⚡️ Quickstart
