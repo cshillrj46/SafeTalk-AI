@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AntiFraud_ChatBot.iml" filepath="$PROJECT_DIR$/.idea/AntiFraud_ChatBot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SafeTalk-AI.iml" filepath="$PROJECT_DIR$/.idea/SafeTalk-AI.iml" />
     </modules>
   </component>
 </project>
