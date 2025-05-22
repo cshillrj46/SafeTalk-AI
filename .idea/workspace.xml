@@ -8,9 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2c7414c-e863-4962-951f-383f596348ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/AntiFraud_ChatBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SafeTalk-AI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,12 +31,12 @@
     &quot;assignee&quot;: &quot;cshillrj46&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/cshillrj46/AntiFraud_ChatBot.git&quot;,
-    &quot;accountId&quot;: &quot;f89d50e1-7825-4d7d-8415-f1e771eb4c19&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/cshillrj46/SafeTalk-AI.git",
+    "accountId": "f89d50e1-7825-4d7d-8415-f1e771eb4c19"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
