@@ -1,6 +1,18 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/cshillrj46/SafeTalk-AI/main/.github/banner-safetalk-ai.svg" alt="SafeTalk-AI: Real-time WhatsApp Scam Detector" width="600"/>
 </p>
+<p align="center">
+  <img src="https://img.shields.io/github/license/cshillrj46/SafeTalk-AI" alt="License">
+  <img src="https://img.shields.io/github/issues/cshillrj46/SafeTalk-AI" alt="GitHub issues">
+  <img src="https://img.shields.io/github/forks/cshillrj46/SafeTalk-AI" alt="GitHub forks">
+  <img src="https://img.shields.io/github/stars/cshillrj46/SafeTalk-AI" alt="GitHub stars">
+  <img src="https://img.shields.io/github/contributors/cshillrj46/SafeTalk-AI" alt="GitHub contributors">
+  <img src="https://img.shields.io/github/last-commit/cshillrj46/SafeTalk-AI" alt="GitHub last commit">
+  <img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/machine%20learning-enabled-brightgreen" alt="Machine Learning">
+  <img src="https://img.shields.io/badge/whatsapp%20bot-enabled-brightgreen" alt="WhatsApp Bot">
+  <img src="https://img.shields.io/badge/AI%20Security-active-orange" alt="AI Security">
+</p>
 # SafeTalk-AI 🛡️🤖
 
 **SafeTalk-AI** is a cutting-edge, real-time AI chatbot for WhatsApp, designed to automatically detect and prevent scams and social engineering attacks through advanced natural language processing.  
