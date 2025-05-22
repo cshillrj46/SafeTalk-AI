@@ -31,30 +31,15 @@ This project combines FastAPI, Python, machine learning and WhatsApp Web automat
 
 ## 📦 Project Structure
 
-SafeTalk-AI/
-│
-├── backend/ # FastAPI backend + ML logic
-│ ├── main.py
-│ ├── model.py
-│ ├── schemas.py
-│ └── train_model.py
-│
-├── data/
-│ └── messages.csv # Training data (do NOT expose real users' data!)
-│
-├── model/
-│ ├── scam_detector.joblib
-│ └── vectorizer.joblib
-│
-├── whatsapp-bot/ # WhatsApp Web bot (Node.js)
-│ ├── whatsapp-web.js
-│ └── audios/
-│
-├── requirements.txt
-├── openapi.json
-├── transcribe.py
-└── README.md
-
+/backend              # FastAPI backend, ML logic
+/data/messages.csv    # Training dataset (no sensitive data)
+/model/*.joblib       # Trained AI model and vectorizer
+/whatsapp-bot         # WhatsApp Web integration (Node.js)
+  └── audios/         # Temporary audio storage (ignored)
+/docs                 # (Optional) Visuals, diagrams, etc.
+requirements.txt      # Python dependencies
+package.json          # Node dependencies (bot)
+/.github              # Workflows, issue templates (optional)
 
 ---
 
