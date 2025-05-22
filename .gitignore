@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.env
+.env/
+.venv/
+venv/
+*.log
+
+# Dados temporários
+*.tmp
+*.bak
+*.swp
+
+# Modelos e resultados gerados
+model/*.joblib
+
+# CSVs gerados em produção
+data/*.csv
+
+# Node.js / JavaScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# WhatsApp Web.js e puppeteer
+whatsapp-bot/node_modules/
+whatsapp-bot/.wwebjs_auth/
+whatsapp-bot/.wwebjs_cache/
+whatsapp-bot/.local-chromium/
+whatsapp-bot/audios/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Sistema
+.DS_Store
+Thumbs.db
