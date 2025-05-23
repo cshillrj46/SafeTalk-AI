@@ -12,6 +12,8 @@
 </p>
 
 ![Built with](https://img.shields.io/badge/Built%20with-FastAPI%20%7C%20React%20%7C%20Tailwind-blueviolet)
+![AI-Powered](https://img.shields.io/badge/AI-Powered-blue)
+![Security-Focused](https://img.shields.io/badge/Security-Focused-critical)
 
 
 # SafeTalk-AI 🛡️🤖
