@@ -15,9 +15,9 @@
   <img alt="Status" src="https://img.shields.io/badge/Status-Stable-brightgreen"/>
 </p>
 
-# 🛡️🤖
 
-**SafeTalk-AI** is a cutting-edge, real-time AI chatbot for WhatsApp, designed to automatically detect and prevent scams and social engineering attacks through advanced natural language processing.  
+
+# 🛡️🤖 **SafeTalk-AI** is a cutting-edge, real-time AI chatbot for WhatsApp, designed to automatically detect and prevent scams and social engineering attacks through advanced natural language processing.  
 This project combines FastAPI, Python, machine learning and WhatsApp Web automation to deliver a market-ready, scalable and highly effective antifraud solution.
 
 ---
