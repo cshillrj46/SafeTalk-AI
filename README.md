@@ -9,20 +9,13 @@
   <img alt="Stars" src="https://img.shields.io/github/stars/cshillrj46/SafeTX-AI?style=social">
   <img alt="Last Commit" src="https://img.shields.io/github/last-commit/cshillrj46/SafeTX-AI?color=blueviolet">
   <img alt="Python Version" src="https://img.shields.io/badge/python-3.10+-blue">
-
+  
   ![Built with](https://img.shields.io/badge/Built%20with-FastAPI%20%7C%20React%20%7C%20Tailwind-blueviolet)
   ![AI-Powered](https://img.shields.io/badge/AI-Powered-blue)
   ![Security-Focused](https://img.shields.io/badge/Security-Focused-critical)
   ![Twitter](https://img.shields.io/badge/Twitter-%40SafeTalkAI-blue?logo=twitter)
   ![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
 </p>
-
-![Built with](https://img.shields.io/badge/Built%20with-FastAPI%20%7C%20React%20%7C%20Tailwind-blueviolet)
-![AI-Powered](https://img.shields.io/badge/AI-Powered-blue)
-![Security-Focused](https://img.shields.io/badge/Security-Focused-critical)
-![Twitter](https://img.shields.io/badge/Twitter-%40SafeTalkAI-blue?logo=twitter)
-![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
-
 
 # SafeTalk-AI 🛡️🤖
 
