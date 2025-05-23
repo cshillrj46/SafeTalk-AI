@@ -8,9 +8,6 @@
 <p align="center">AI-powered Fraud Prevention • Open Source • Modern & Secure</p>
 
 <p align="center">
-  <a href="https://github.com/cshillrj46/SafeTX-AI/actions/workflows/python_ci_workflow.yml">
-    <img alt="Python CI" src="https://github.com/cshillrj46/SafeTX-AI/actions/workflows/python_ci_workflow.yml/badge.svg">
-  </a>
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
   <img alt="Issues" src="https://img.shields.io/github/issues/cshillrj46/SafeTX-AI?color=informational">
   <img alt="Forks" src="https://img.shields.io/github/forks/cshillrj46/SafeTX-AI?style=social">
