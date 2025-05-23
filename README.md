@@ -1,7 +1,7 @@
 <p align="center">
   <img src=".github/banner-safetalk-ai.svg" alt="SafeTX-AI Banner" width="600"/>
 </p>
-
+  
 <p align="center">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
   <img alt="Issues" src="https://img.shields.io/github/issues/cshillrj46/SafeTX-AI?color=informational">
