@@ -1,21 +1,23 @@
 <p align="center">
-  <img src=".github/banner-safetalk-ai.svg" alt="SafeTX-AI Banner" width="600"/>
+  <img src=".github/banner-safetalk-ai.svg" alt="SafeTX-AI Banner" width="600"/><br>
+
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen"/>
+  <img alt="Issues" src="https://img.shields.io/github/issues/cshillrj46/SafeTX-AI?color=informational"/>
+  <img alt="Forks" src="https://img.shields.io/github/forks/cshillrj46/SafeTX-AI?style=social"/>
+  <img alt="Stars" src="https://img.shields.io/github/stars/cshillrj46/SafeTX-AI?style=social"/>
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/cshillrj46/SafeTX-AI?color=blueviolet"/>
+  <img alt="Python Version" src="https://img.shields.io/badge/python-3.10+-blue"/><br>
+
+  <img alt="Built with" src="https://img.shields.io/badge/Built%20with-FastAPI%20%7C%20React%20%7C%20Tailwind-blueviolet"/>
+  <img alt="AI Powered" src="https://img.shields.io/badge/AI-Powered-blue"/>
+  <img alt="Security Focused" src="https://img.shields.io/badge/Security-Focused-critical"/>
+  <img alt="Twitter" src="https://img.shields.io/badge/Twitter-@SafeTalkAI-blue?logo=twitter"/>
+  <img alt="Status" src="https://img.shields.io/badge/Status-Stable-brightgreen"/>
 </p>
-  
-<p align="center">
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-  <img alt="Issues" src="https://img.shields.io/github/issues/cshillrj46/SafeTX-AI?color=informational">
-  <img alt="Forks" src="https://img.shields.io/github/forks/cshillrj46/SafeTX-AI?style=social">
-  <img alt="Stars" src="https://img.shields.io/github/stars/cshillrj46/SafeTX-AI?style=social">
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/cshillrj46/SafeTX-AI?color=blueviolet">
-  <img alt="Python Version" src="https://img.shields.io/badge/python-3.10+-blue">
-</p>
 
 
-# SafeTalk-AI 🛡️🤖
 
-**SafeTalk-AI** is a cutting-edge, real-time AI chatbot for WhatsApp, designed to automatically detect and prevent scams and social engineering attacks through advanced natural language processing.  
-This project combines FastAPI, Python, machine learning and WhatsApp Web automation to deliver a market-ready, scalable and highly effective antifraud solution.
+**🛡️🤖 SafeTalk-AI** is a cutting-edge, real-time AI chatbot for WhatsApp, designed to automatically detect and prevent scams and social engineering attacks through advanced natural language processing. This project combines FastAPI, Python, machine learning and WhatsApp Web automation to deliver a market-ready, scalable and highly effective antifraud solution.
 
 ---
 
