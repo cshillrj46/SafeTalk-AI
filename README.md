@@ -1,32 +1,24 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/cshillrj46/SafeTalk-AI/main/.github/banner-safetalk-ai.svg" alt="SafeTalk-AI: Real-time WhatsApp Scam Detector" width="600"/>
+  <img src="SafeTX.png" alt="SafeTX-AI Banner" width="450"/>
 </p>
 
-# SafeTalk-AI
+<h1 align="center">SafeTalk-AI</h1>
 
-Real-time WhatsApp Scam Detector  
-AI-powered Fraud Prevention • Open Source • Modern & Secure
-
-[![Python CI](https://github.com/cshillrj46/SafeTX-AI/actions/workflows/python_ci_workflow.yml/badge.svg)](https://github.com/cshillrj46/SafeTX-AI/actions/workflows/python_ci_workflow.yml)
-![license](https://img.shields.io/badge/license-MIT-green)
-![issues](https://img.shields.io/github/issues/cshillrj46/SafeTX-AI)
-![forks](https://img.shields.io/github/forks/cshillrj46/SafeTX-AI?style=social)
-![stars](https://img.shields.io/github/stars/cshillrj46/SafeTX-AI?style=social)
-![last commit](https://img.shields.io/github/last-commit/cshillrj46/SafeTX-AI)
-![python](https://img.shields.io/badge/python-3.10+-blue)
+<p align="center"><strong>Real-time WhatsApp Scam Detector</strong></p>
+<p align="center">AI-powered Fraud Prevention • Open Source • Modern & Secure</p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/cshillrj46/SafeTalk-AI" alt="License">
-  <img src="https://img.shields.io/github/issues/cshillrj46/SafeTalk-AI" alt="GitHub issues">
-  <img src="https://img.shields.io/github/forks/cshillrj46/SafeTalk-AI" alt="GitHub forks">
-  <img src="https://img.shields.io/github/stars/cshillrj46/SafeTalk-AI" alt="GitHub stars">
-  <img src="https://img.shields.io/github/contributors/cshillrj46/SafeTalk-AI" alt="GitHub contributors">
-  <img src="https://img.shields.io/github/last-commit/cshillrj46/SafeTalk-AI" alt="GitHub last commit">
-  <img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python 3.10+">
-  <img src="https://img.shields.io/badge/machine%20learning-enabled-brightgreen" alt="Machine Learning">
-  <img src="https://img.shields.io/badge/whatsapp%20bot-enabled-brightgreen" alt="WhatsApp Bot">
-  <img src="https://img.shields.io/badge/AI%20Security-active-orange" alt="AI Security">
+  <a href="https://github.com/cshillrj46/SafeTX-AI/actions/workflows/python_ci_workflow.yml">
+    <img alt="Python CI" src="https://github.com/cshillrj46/SafeTX-AI/actions/workflows/python_ci_workflow.yml/badge.svg">
+  </a>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  <img alt="Issues" src="https://img.shields.io/github/issues/cshillrj46/SafeTX-AI?color=informational">
+  <img alt="Forks" src="https://img.shields.io/github/forks/cshillrj46/SafeTX-AI?style=social">
+  <img alt="Stars" src="https://img.shields.io/github/stars/cshillrj46/SafeTX-AI?style=social">
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/cshillrj46/SafeTX-AI?color=blueviolet">
+  <img alt="Python Version" src="https://img.shields.io/badge/python-3.10+-blue">
 </p>
+
 
 # SafeTalk-AI 🛡️🤖
 
