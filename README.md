@@ -2,11 +2,6 @@
   <img src=".github/banner-safetalk-ai.svg" alt="SafeTX-AI Banner" width="600"/>
 </p>
 
-<h1 align="center">SafeTalk-AI</h1>
-
-<p align="center"><strong>Real-time WhatsApp Scam Detector</strong></p>
-<p align="center">AI-powered Fraud Prevention • Open Source • Modern & Secure</p>
-
 <p align="center">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
   <img alt="Issues" src="https://img.shields.io/github/issues/cshillrj46/SafeTX-AI?color=informational">
