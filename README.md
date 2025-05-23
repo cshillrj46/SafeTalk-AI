@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/banner-safetalk-ai.svg" alt="SafeTX-AI Banner" width="450"/>
+  <img src=".github/banner-safetalk-ai.svg" alt="SafeTX-AI Banner" width="600"/>
 </p>
 
 <h1 align="center">SafeTalk-AI</h1>
