@@ -1,32 +1,50 @@
-# SafeTalk B2B API
+<div align="center">
+
+<img src=".github/banner.svg" alt="SafeTalk B2B API" width="100%"/>
+
+[![CI](https://github.com/cshillrj46/SafeTalk-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/cshillrj46/SafeTalk-AI/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009485?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Status: MVP](https://img.shields.io/badge/status-MVP-orange)](#limitações-conhecidas)
+
+</div>
 
 API de triagem de mensagens para detecção de golpes e engenharia social em
-canais de atendimento (WhatsApp Business API, chat web, SMS), pensada para
-integração em sistemas de bancos e fintechs — não um bot fechado de
-WhatsApp.
+canais de atendimento (WhatsApp Business API, chat web, SMS) — pensada para
+ser integrada em sistemas de bancos e fintechs, não para ser um bot fechado
+de WhatsApp.
 
-Este repositório substitui o protótipo original [SafeTalk-AI](.), que usava
-automação não-oficial de WhatsApp Web (`whatsapp-web.js`) e um classificador
-simples sem tratamento de privacidade. Aqui o desenho é outro: o cliente B2B
-mantém seu próprio canal (WhatsApp Business API oficial, CRM, etc.) e chama
-esta API para obter um veredito de risco estruturado.
+## Sumário
 
-## Por que essa mudança
+- [Por que essa arquitetura](#por-que-essa-arquitetura)
+- [Como funciona](#como-funciona)
+- [Quickstart](#quickstart)
+- [Usando a API](#usando-a-api)
+- [Testes](#testes)
+- [Estrutura do projeto](#estrutura-do-projeto)
+- [Limitações conhecidas](#limitações-conhecidas)
+- [Licença](#licença)
 
-- **Canal oficial, não automação não-oficial**: bots baseados em
-  `whatsapp-web.js`/Puppeteer correm risco real de banimento de número e não
-  escalam. Esta API não toca o canal — ela só analisa o texto que o cliente
-  já recebeu pelo canal dele.
-- **Privacidade desde o design**: nenhuma mensagem em texto puro é
-  persistida. O log de auditoria guarda só a versão anonimizada
-  (`app/core/anonymizer.py`), com CPF, telefone, e-mail e cartão mascarados
-  antes de qualquer escrita em disco.
-- **Decisão em camadas, não um único modelo**: regras heurísticas (baratas e
-  rápidas) cobrem os golpes mais óbvios e documentados; um modelo de ML
-  cobre o grosso dos casos; um LLM entra só como segunda opinião nos casos
-  ambíguos — controlando custo em alto volume.
+## Por que essa arquitetura
 
-## Arquitetura
+<details>
+<summary><strong>Este repositório substitui um protótipo anterior baseado em automação não-oficial de WhatsApp Web. Clique para ver o que mudou.</strong></summary>
+
+| Aspecto | Protótipo original | Esta versão |
+|---|---|---|
+| Canal | `whatsapp-web.js` (não-oficial, risco de ban) | API pura — o cliente usa o próprio canal oficial |
+| ML | RandomForest sem validação cruzada | LogisticRegression com cross-validation e relatório salvo |
+| Privacidade | Nenhuma anonimização | Anonimização antes de qualquer persistência |
+| Decisão | Único modelo, sem segunda opinião | Regras → ML → LLM, com fallback gracioso em cada etapa |
+| Testes | `assert 1+1==2` | 21 testes reais cobrindo regras, anonimização, pipeline e API |
+| Dependências | `requirements.txt` não correspondia ao código | Corrigido e versionado |
+
+Detalhes completos em [`docs/architecture.md`](docs/architecture.md).
+
+</details>
+
+## Como funciona
 
 ```
 Mensagem do chat
@@ -44,30 +62,34 @@ Mensagem do chat
 Alerta / score ao analista (resposta da API)
 ```
 
-Detalhes em [`docs/architecture.md`](docs/architecture.md).
+1. **Ingestão** — autenticação por API key, rate limiting, anonimização de
+   CPF/telefone/e-mail/cartão antes de qualquer log.
+2. **Detecção híbrida** — regras heurísticas (baratas e rápidas) cobrem os
+   golpes mais óbvios; um modelo de ML cobre o grosso dos casos; um LLM
+   entra só como segunda opinião nos casos ambíguos.
+3. **Resposta & score** — devolve um veredito estruturado (`risco`,
+   `confiança`, `motivo`, `fonte`) para o sistema do cliente decidir o que
+   fazer — bloquear, escalar para um analista, ou alimentar um dashboard.
 
 ## Quickstart
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
 
 pip install -r requirements.txt
+cp .env.example .env                # edite se quiser configurar ANTHROPIC_API_KEY
 
-cp .env.example .env
-# edite .env se quiser configurar ANTHROPIC_API_KEY para o fallback de LLM
-
-# gera dataset sintético e treina o modelo inicial
 python training/generate_synthetic_dataset.py
 python training/train_model.py
 
 uvicorn app.main:app --reload
 ```
 
-A API sobe em `http://localhost:8000`. Documentação interativa automática em
+A API sobe em `http://localhost:8000` — documentação interativa em
 `http://localhost:8000/docs`.
 
-### Chamando a API
+## Usando a API
 
 ```bash
 curl -X POST http://localhost:8000/v1/analyze \
@@ -76,23 +98,53 @@ curl -X POST http://localhost:8000/v1/analyze \
   -d '{"message": "Pix urgente agora, troquei de número, me ajuda!"}'
 ```
 
-### Testes
+```json
+{
+  "request_id": "293956ff-a0e5-4160-9eb5-7de4e2819c51",
+  "risk": "alto",
+  "confidence": 0.88,
+  "reason": "Classificação pelo modelo de machine learning treinado.",
+  "triggered_rules": ["pix_urgente"],
+  "source": "ml"
+}
+```
+
+## Testes
 
 ```bash
 pytest -v
 ```
 
-## O que ainda é um MVP (limitações conhecidas, não escondidas)
+21 testes cobrindo o motor de regras, a anonimização, o pipeline de decisão
+e os endpoints da API — rodam automaticamente em todo push via GitHub
+Actions (badge de CI no topo deste README).
 
-- **Dataset de treino é sintético** (`training/generate_synthetic_dataset.py`).
-  Suficiente para o pipeline funcionar de ponta a ponta, insuficiente para
-  produção. Próximo passo real: dataset com mensagens reais anonimizadas,
-  via parceria ou opt-in de usuários.
+## Estrutura do projeto
+
+```
+app/
+├── api/v1/        # endpoints (POST /v1/analyze, GET /v1/stats/summary)
+├── core/          # auth, rate limiting, anonimização
+├── detection/      # regras, modelo de ML, fallback de LLM, pipeline
+├── audit/          # log de auditoria (SQLite)
+└── main.py
+training/           # gerador de dataset sintético + script de treino
+tests/               # testes pytest
+docs/architecture.md # detalhamento da arquitetura
+```
+
+## Limitações conhecidas
+
+Sem rodeio — isto é um MVP, não um produto pronto para produção:
+
+- **Dataset de treino é sintético** (template-based). Suficiente para o
+  pipeline funcionar de ponta a ponta; insuficiente para produção. Próximo
+  passo real: dataset com mensagens reais anonimizadas, via parceria ou
+  opt-in de usuários.
 - **Anonimização é baseada em regex** — cobre CPF, CNPJ, telefone, e-mail e
-  cartão, mas não nomes próprios ou endereços em texto livre. Uma v2
-  precisaria de um modelo de NER em português.
-- **Rate limiting é em memória**, válido para uma única instância. Múltiplas
-  réplicas precisam de Redis ou um API gateway dedicado.
+  cartão, mas não nomes próprios ou endereços em texto livre.
+- **Rate limiting é em memória** — válido para uma única instância;
+  múltiplas réplicas precisam de Redis ou um API gateway dedicado.
 - **Log de auditoria em SQLite** — adequado para MVP/demo, não para alto
   volume multi-cliente em produção (migrar para Postgres).
 

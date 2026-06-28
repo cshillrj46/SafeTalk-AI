@@ -1,0 +1,30 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SafeTalk B2B API">
+  <rect width="1200" height="260" fill="#0B1220"/>
+  <rect width="1200" height="260" fill="none" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- ícone: escudo com check, formas simples -->
+  <g transform="translate(90,70)">
+    <path d="M60 0 L116 22 V70 C116 104 90 128 60 140 C30 128 4 104 4 70 V22 Z"
+          fill="#0F6E56" stroke="#5DCAA5" stroke-width="2"/>
+    <path d="M36 72 L54 90 L88 50" fill="none" stroke="#E1F5EE" stroke-width="8"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- texto principal -->
+  <text x="250" y="115" font-family="Helvetica, Arial, sans-serif" font-size="54"
+        font-weight="600" fill="#F8FAFC">SafeTalk B2B API</text>
+  <text x="250" y="155" font-family="Helvetica, Arial, sans-serif" font-size="22"
+        fill="#94A3B8">Triagem de golpes em mensagens — regras + ML + LLM</text>
+
+  <!-- linha de tags discretas -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#5DCAA5">
+    <text x="250" y="195">FastAPI</text>
+    <text x="335" y="195">·</text>
+    <text x="355" y="195">scikit-learn</text>
+    <text x="475" y="195">·</text>
+    <text x="495" y="195">LGPD by design</text>
+  </g>
+
+  <text x="90" y="235" font-family="Helvetica, Arial, sans-serif" font-size="14"
+        fill="#475569">github.com/cshillrj46/SafeTalk-AI</text>
+</svg>
