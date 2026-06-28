@@ -1,0 +1,10 @@
+services:
+  safetalk-api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./models:/app/models
+      - ./audit_log.db:/app/audit_log.db
